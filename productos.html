@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Productos - EcoMarket</title>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid #e6efe6;
+    text-align: center;
+}
+
+.logo {
+    height: 60px;
+}
+
+/* BARRA SUPERIOR */
+.search-bar {
+    background: #f5f5f5;
+    padding: 15px;
+}
+
+.search-box {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.search-box button {
+    background: #7fad39;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+}
+
+/* HERO */
+.hero-small {
+    background: url('img/banner.jpg') center/cover no-repeat;
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-small h2 {
+    background: rgba(34, 85, 34, 0.7);
+    padding: 10px 25px;
+    border-radius: 6px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: #f0f7f0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar h4 {
+    color: #4CAF50;
+    margin-bottom: 15px;
+}
+
+.sidebar a {
+    display: block;
+    padding: 8px 0;
+    color: #2f4f2f;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: #7fad39;
+}
+
+/* TARJETAS */
+.card-cat {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:bold;
+    font-size:20px;
+    border-radius:12px;
+    transition:0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card-cat:hover {
+    transform: scale(1.05);
+}
+
+.card-cat::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to top, rgba(34,85,34,0.7), transparent);
+}
+
+.card-cat span {
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXTO */
+.subtitle {
+    color: #4CAF50;
+}
+
+/* FOOTER */
+footer {
+    background:#eef5ee;
+    padding:20px;
+    color:#2f4f2f;
+}
+
+/* Footer general */
+.footer {
+    background: #222;          /* Fondo oscuro */
+    color: #ccc;               /* Texto gris claro */
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.footer__logo h2 {
+    color: #32cd32;            /* Verde para EcoMarket */
+    font-weight: bold;
+}
+
+/* Contacto */
+.footer__about ul li {
+    list-style: none;
+    margin-bottom: 8px;
+    color: #ccc;
+}
+
+/* Enlaces útiles */
+.footer__widget h6 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer__widget ul {
+    padding: 0;
+    margin: 0;
+}
+
+.footer__widget ul li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+.footer__widget ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer__widget ul li a:hover {
+    color: #32cd32;            /* Verde al pasar el mouse */
+}
+
+/* Boletín */
+.footer__widget form {
+    display: flex;
+    margin-top: 15px;
+}
+
+.footer__widget input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.footer__widget .site-btn {
+    background: #32cd32;       /* Botón verde */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.footer__widget .site-btn:hover {
+  background: #28a428;       /* Verde más oscuro */
+}
+
+/* Redes sociales */
+.footer__social a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #ccc;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.footer__social a:hover {
+    color: #32cd32;            /* Verde al pasar el mouse */
+}
+
+/* Copyright */
+.footer__copyright {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+.footer__payment img {
+    max-width: 250px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header class="header py-3">
+<a href="index.html">
+<img src="img/logo.png" alt="EcoMarket" class="logo">
+</a>
+</header>
+
+<section class="search-bar">
+<div class="container d-flex justify-content-between align-items-center">
+
+<div class="search-box w-75">
+<input type="text" placeholder="¿Qué necesitas?">
+<button>Buscar</button>
+</div>
+
+<div>
+<strong>+51 999 888 777</strong><br>
+<small>Soporte 24/7</small>
+</div>
+
+</div>
+</section>
+
+<section class="hero-small">
+<h2>Nuestros Productos</h2>
+</section>
+
+<div class="container text-center mt-4">
+<p class="subtitle">Selecciona lo que vas a llevar o comprar</p>
+</div>
+
+<section class="container mt-4">
+<div class="row">
+
+<!-- SIDEBAR -->
+<div class="col-md-3 mb-4">
+<div class="sidebar">
+<h4>Productos</h4>
+<a href="frutas.html">Frutas</a>
+<a href="verduras.html">Verduras</a>
+<a href="frutos-secos.html">Frutos Secos</a>
+<a href="semillas.html">Semillas</a>
+</div>
+</div>
+
+<!-- PRODUCTOS -->
+<div class="col-md-9">
+<div class="row">
+
+<div class="col-md-4 mb-4">
+<a href="frutas.html">
+<div class="card-cat" style="background-image:url('img/frutas.jpg')">
+<span>Frutas</span>
+</div>
+</a>
+</div>
+
+<div class="col-md-4 mb-4">
+<a href="verduras.html">
+<div class="card-cat" style="background-image:url('img/verduras.jpg')">
+<span>Verduras</span>
+</div>
+</a>
+</div>
+
+<div class="col-md-4 mb-4">
+<a href="frutos-secos.html">
+<div class="card-cat" style="background-image:url('img/secos.jpg')">
+<span>Frutos Secos</span>
+</div>
+</a>
+</div>
+
+<div class="col-md-4 mb-4">
+<a href="semillas.html">
+<div class="card-cat" style="background-image:url('img/semillas.jpg')">
+<span>Semillas</span>
+</div>
+</a>
+</div>
+
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="footer" class="text-center mt-5">
+    <div class="container">
+        <div class="row">
+
+    <!-- Logo y contacto -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="footer__about">
+            <div class="footer__logo">
+            <h2 style="color:green;">EcoMarket</h2>
+            </div>
+            <ul>
+            <li>Dirección: 60-49 Road 11378 Nueva York</li>
+            <li>Teléfono: +65 11.188.888</li>
+            <li>Correo electrónico: hello@colorlib.com</li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Enlaces útiles -->
+        <div class="col-lg-3 col-md-6 col-sm-6">
+        <div class="footer__widget">
+            <h6>Enlaces útiles</h6>
+            <ul>
+            <li><a href="#">Acerca de nosotros</a></li>
+            <li><a href="#">Acerca de nuestra tienda</a></li>
+            <li><a href="#">Compras seguras</a></li>
+            <li><a href="#">Información de entrega</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Nuestro mapa del sitio</a></li>
+            </ul>
+            <ul>
+            <li><a href="#">Quienes somos</a></li>
+            <li><a href="#">Nuestros servicios</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Innovación</a></li>
+            <li><a href="#">Testigos</a></li>
+            </ul>
+        </div>
+        </div>
+
+        <!-- Boletín -->
+        <div class="col-lg-4 col-md-6 col-sm-6">
+            <div class="footer__widget">
+                <h6>Únase a nuestro boletín ahora</h6>
+                <p>Reciba actualizaciones por correo electrónico sobre nuestras últimas ofertas y promociones.</p>
+                <form action="#">
+                <input type="text" placeholder="Introduce tu correo">
+                <button type="submit" class="site-btn">SUSCRIBIRSE</button>
+            </form>
+            <div class="footer__social">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="footer__copyright">
+        <div class="row">
+            <div class="col-lg-8 col-md-6">
+            <p>
+            Copyright ©2026 Todos los derechos reservados | 
+            Esta plantilla está hecha con ♥ por colorlib
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="footer__payment">
+            <img src="img/payment-item.png" alt="Métodos de pago">
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+</body>
+</html>
