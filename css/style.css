@@ -1,0 +1,249 @@
+/* Fuente moderna desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    justify-content: flex-end;
+    background-color: #828080;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+header{
+    text-align:center;
+    padding: 20px;
+    background-color: rgb(220, 215, 215);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+header h1 {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+header img{
+    width: 150px;
+}
+nav{
+    background-color: rgba(0,0,0,0.8);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    justify-content: center;
+    gap: 15px;
+
+}
+nav a { /*edicion principio */
+    text-decoration: none;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+nav a:hover {
+    background: #abaeaf;
+    color: #000;
+    transform: scale(1.05);
+} /*edicion final */
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 15px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #1a1a1a;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.4s ease;
+}
+nav ul li a:hover{
+    background-color: #606365;
+    border-radius: 10px;
+    color: #000;
+    transform: scale(1.1); /* Animación */
+}
+section{
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin: 20px 0; /* Secciones */
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 10px auto;
+    border: 2px solid #fff;
+    border-radius: 8px;
+    max-width: 100%;
+}
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+th {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+}
+td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: rgba(255,255,255,0.1);
+}
+tr:hover {
+    background-color: rgba(135,206,250,0.3);
+}
+article{
+    flex: 2;
+    background-color: rgb(232, 227, 227);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #022442;
+}
+article ul, ol, dl{
+    padding: 10px;
+    margin: 10px;
+}
+article img{
+    width: 500px;
+}
+article table {
+    border: 3px solid;
+    background-color: #f2f3d8;
+}
+article table th, td{
+    border: 1px solid;
+}
+aside{
+    justify-content: center;
+    flex: 1;
+    background-color: rgb(217, 217, 223);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #022442;
+}
+footer{
+    text-align: center;
+    padding: 15px;
+    background: rgba(0,0,0,0.8);
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 8px 12px;
+    flex: 2;
+}
+
+/* Estilos generales para tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+/* Encabezados */
+table th {
+    background-color: #404043;
+    color: #fff;
+    padding: 12px;
+    text-align: center;
+}
+
+/* Celdas */
+table td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Filas alternadas para comodidad visual */
+table tr:nth-child(even) {
+    background-color: #f2f2f2;  
+}
+table tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+/* Efecto al pasar el mouse */
+table tr:hover {
+    background-color: #ddd;
+}
+
+/* Diseño de las tablas */
+h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#respuestaSenati {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #101422, #202741, #343c63);
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
+    color: #f5f5f5;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    margin: 10px 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background: #4c5288;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #202741;
+    transform: scale(1.05);
+}
